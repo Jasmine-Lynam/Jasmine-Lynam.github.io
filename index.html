@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jasmine Lynam</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        jQuery(function ($) {
+            function init_map1() {
+                var myLocation = new google.maps.LatLng(53.330857, -6.298004);
+                var mapOptions = {
+                    center: myLocation,
+                    zoom: 16
+                };
+                var marker = new google.maps.Marker({
+                    position: myLocation,
+                    title: "Property Location"
+                });
+                var map = new google.maps.Map(document.getElementById("map1"),
+                    mapOptions);
+                marker.setMap(map);
+            }
+            init_map1();
+        });
+    </script>
+ 
+  
+
+  <style>
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 2px;
+  border-radius: 90%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+ .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+ .fa-github {
+  background: #7D3C98;
+  color: white;
+}
+
+    position: relative; 
+  }
+  #section2 {padding-top:3000px;height:600px;}
+  #section3 {padding-top:100px;height:700px;}
+  #section4 {padding-top:50px;height: 1000px;}
+  #section6 {padding-top:50px;height:950px;}
+  #section7 {padding-top:50px;height:850px;}
+  #section8 {padding-top:50px;height:500px;}
+
+
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res-3.cloudinary.com/fieldfisher/image/upload/c_lfill,g_auto/f_auto,q_auto/v1/sectors/technology/tech_neoncircuitboard_857021704_medium_lc5h05");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 40%;
+	height: 50%;
+    margin: auto;
+  }
+  
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+
+}
+
+.carousel-caption p {
+color:          black !important;
+}
+
+.carousel-caption h3 {
+
+color:          black !important;
+}
+
+  .map {
+            min-width: 300px;
+            min-height: 300px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            background-color: #F5F5F5;
+            color: #36A0FF;
+            height: 70px;
+            font-size: 27px;
+            padding: 10px;
+        }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Jasmine Lynam</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Education</a></li>
+		  <li><a href="#section4">Experience</a></li>
+		  <li><a href="#section6">Interests & Achievements</a></li>
+		  <li><a href="#section7">Projects</a></li>
+		  <li><a href="#section8">Contact</a></li>
+		  <li><a href="file:///C:/Users/jasmi/Documents/GitHub/Jasmine-Lynam.github.io/references.html">CA References</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Jasmine Lynam</h1>
+            <p>4th Year Computing with IT Management Student</p>
+			<a href="https://www.linkedin.com/in/jasmine-lynam-74baa8139/" class="fa fa-linkedin"></a>
+			<a href="https://github.com/Jasmine-Lynam" class="fa fa-github"></a>
+        </div>
+    </div>
+
+<div id="section2" class="container pt-3">
+	  <h2>About</h2>
+    <img style="float:left" src="data:image/jpeg;base64,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" height="130" width="130" />
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="well">
+                <h4>About Me</h4>
+                <p>
+                    Currently, a 4th year Computing with IT Management student at TU Dublin – Tallaght seeking a graduate role
+                    at a company that will help me further my knowledge gained throughout college. I’ve always found it particularly interesting how
+                    quickly technology evolves over time and realized I would like to pursue a career in the field.
+                </p>
+                <p>Since enrolling in TU Dublin as a full-time student,</p>
+                <p>&#9642; Graduated with Bsc (Ord) in Computing with IT Management</p>
+                <P>&#9642; I've received Intel Irelands Women in Technology scholarship 2016</P>
+                <p>&#9642; Completed work placement as a Software engineer in Intel Ireland, IoT, and Wearables group</p>
+                <p>&#9642; Completed work placement as a Junior Engineer in Enterprise solutions Ltd</p>
+                <p>
+                    I’m interested in exploring aspects of technology relating to Networking, Security, and Cloud computing. Currently, I'm hoping
+                    to complete my 4th year at TU Dublin while also keeping my options open for any upcoming opportunities to gain further experience
+                </p>
+		          </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="section3" class="container pt-3">
+<div>
+<h2>Education</h2>
+<h4>TU Dublin - Tallaght Campus</h4>
+<p>Bsc (Hons) Computing with IT Management 2016-2021</P>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#YEAR3">Year 3</a></li>
+    <li><a data-toggle="tab" href="#YEAR2">Year 2</a></li>
+    <li><a data-toggle="tab" href="#YEAR1">Year 1</a></li>
+
+  </ul>
+	
+	<div class="tab-content">
+    <div id="YEAR3" class="tab-pane fade in active">
+            <table class="table">
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cloud Service and Distributed Computing</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Experiential Learning</td>
+                        <td>PS</td>
+                    </tr>
+                    <tr>
+                        <td>Big Data Technologies</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Data Analysis</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Network Fundamentals</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Server Side Web Development</td>
+                        <td>C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	
+  <div class="tab-pane fade" id="YEAR2">
+            <table class="table">
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Database Design and Programming</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 3</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Networking 1</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Networking 2</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Management Science </td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Information Security</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>IT Service Management</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Project</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Database Administration </td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Software Quality Assurance & Testing</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Maths 2</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Web Design & Development</td>
+                        <td>B-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+		
+		<div class="tab-pane fade" id="YEAR1">
+            <table class="table">
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Discrete Mathematics 1</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Business & Information Sys</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Database Fundamentals</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 1</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Object Oriented Sys Analysis</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Communications</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Statistics</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Sys fundamentals</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Software Development 2</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Compyter Architecture</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Fundament of Interface & Web</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Learning to Learn at 3rd lvl</td>
+                        <td>C+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<div id="section4" class="container pt-3">
+  <h2>Experience</h2>
+  <img style="float:left" src="https://pbs.twimg.com/profile_images/1159780320700506113/vGM88DDs_400x400.jpg"  height="130" width="130"/>
+	 <div class="row">
+        <div class="col-sm-10">
+          <div class="well">
+			<h4>Eir</h4>
+			<p>Oct 2019 - Sept 2020</p>
+			<p>Retail Sales Consultant</p>
+           	<p>Eir are known as the largest telecommunications operator in Ireland. Providing a range of different services such as Broadband, TV and Mobile Bundles. During my time at Eir I worked as a Retail Sales consultant. This involved striking a conversation with customers, determining their needs and recommending a package based on their requirements</p>
+
+		 </div>
+        </div>
+      </div>
+  
+	  <img style="float:left" src="https://scontent-dub4-1.xx.fbcdn.net/v/t1.15752-9/131369466_4794480727259895_4921628407917016257_n.png?_nc_cat=111&ccb=2&_nc_sid=ae9488&_nc_ohc=EfYElTAexzgAX-styur&_nc_ht=scontent-dub4-1.xx&oh=8cb034f44b1e0311f04da5438f31b51f&oe=5FFFBD45"  height="130" width="130"/>
+	  <div class="row">
+        <div class="col-sm-10">
+          <div class="well">
+		  <h4>Enterprise Solutions</h4>
+		  <p>Feb 2019 - July 2019</p>
+		  <p> Junior Engineer Intern</P>
+           <p>Enterprise solutions are known for their years of experience partnering with leading IT vendors such as Citrix, Microsoft, and Solar winds. They're also known as the leading IT solutions providers specializing in Citrix consultancy, enterprise cloud, managed services and hosted desktop</p>
+			<p>During my time at Enterprise solutions I completed my 3rd year Internship where I worked as a Junior engineer, my position involved working on Managed service and Hosted desktop tickets. I also worked alongside the Service delivery manager, monitoring the service board, creating tickets and interacting with both engineers and customers</p>
+
+
+
+		 </div>
+        </div>
+      </div>
+	  
+	  
+	  <img style="float:left" src="https://pbs.twimg.com/profile_images/1301203753501163520/5RESd43X_400x400.png"  height="130" width="130"/>
+	  <div class="row">
+        <div class="col-sm-10">
+          <div class="well">
+			<h4>Intel Ireland</h4>
+			<P>Jun 2017 - Sept 2017</P>
+			<p>Software Engineer Intern</P>
+            <p>Intel Ireland are known as one of Intel’s most technologically advanced manufacturing sites in Europe. The Leixlip campus is responsible for the production of Intel’s 14nm process technology. As well as being the largest private investment ever made in the history of Irish state</p>
+			<p>During my internship at Intel I completed a smart homes project alongside two other team members. Our team was part of the department known as the IoT & Wearables group. With the focus of this project being to apply the skills and knowledge gained throughout our time at Intel. The objective of my teams’ project was to build a basic home automation system and to demonstrate how IoT can be incorporated into any home</p>
+
+
+		 </div>
+        </div>
+      </div>
+ </div>
+ 
+<div id="section6" class="container pt-3">
+  <h2>Interests & Achievements</h2>
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://simplecore.intel.com/newsroom-en-ie/wp-content/uploads/sites/26/2016/11/BL5Q3308.jpg" alt="Intel" style="width:50%;">
+         <div class="carousel-caption">
+		<h3>Intel Women in Technology Scholarship 2016</h3>
+          <p>Received the Intel Women in Technology Scholarship which is a achievement awarded by Intel Ireland to female school leavers entering an undergraduate honors degree in STEM courses</p>
+		</div>
+      </div>
+
+      <div class="item">
+        <img src="https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-9/33094444_2092383200789314_6288874320928178176_o.jpg?_nc_cat=102&ccb=2&_nc_sid=e3f864&_nc_ohc=rFLU-QuSywYAX_CjU8r&_nc_ht=scontent-dub4-1.xx&oh=f4d9766d70c7d6a0b4d42598fe4009e4&oe=5FFFC48D" alt="Chania" style="width:50%;">
+        <div class="carousel-caption">
+          <h3>Secretary and member of the IT Tallaght Pool and Snooker club</h3>
+          <p>Responsible for administrative duties that enable the club and its members to function effectively</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://scontent-dub4-1.xx.fbcdn.net/v/t1.15752-9/131218997_134316805123503_246780461329164439_n.jpg?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=cUc7jLub6m4AX-xXrbS&_nc_ht=scontent-dub4-1.xx&oh=f164f76ec41e7b97cc6c98de25fbc71a&oe=5FFF2592" alt="Flower" style="width:50%;">
+        <div class="carousel-caption">
+          <h3>Dotwork & Blackwork Artist</h3>
+          <p>Outside of college I like to spend my time drawing and painting. The majority of my drawings would be considered a style of tattooing known as Dotwork and Blackwork</p>
+        </div>
+      </div>
+
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+<div id="section7" class="container pt-3">
+  <h1>Projects</h1>
+
+  <div class="panel-group" >
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Final Year Project - Ongoing </a>   
+		  
+		
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+		<h5><strong>Description</strong></h5>
+		<p>In recent months rather than being on campus, students are returning to college remotely. For a number of students this raises an 
+		issue, as the vast majority of students are using a budget line laptop that is lacking the technical requirements needed for 
+		their coursework. This scenario applies to a number of technical students as well as those with outdated machines.The concept for 
+		my project is to implement a Virtual Desktop Infrastructure for students working remotely from home. Here, by incorporating a VDI solution
+		there is no need for students to purchase a top of the range desktop. Throughout the course of my project I’ll be comparing various 
+		VDI solutions and determining which one is best suited in a remote academic environment. 
+		
+		<h5><strong>Technologies & Tools Used</strong></h5>
+		<p>Azure, Amazon WorkSpaces, Citrix Cloud</p>
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Third Year Project - Analysis of a Dataset</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong>Description</strong></h5>
+		<p>During my third year, I was required to work in a group of three, to complete a project that
+		demonstrated my knowledge and understanding of Data Analytics through the Python library,
+		Pandas. My dataset was based on HIV/AIDS Diagnoses by neighbourhood, gender, and
+		race/ethnicity. This process involved filtering the data, carrying out statistical tests, implementing
+		them in Python, and visualizing the dataset through the use of pie charts and bar charts</p>
+		
+		<h5><strong>Technology & Tools Used</strong></h5>
+		<p>Data Analytics lifecycle, Python, Numpy, SciPy</p>
+		
+		</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Intel IoT Project - Smart Home</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong>Description</strong></h5>
+		<p>During my internship at Intel, I completed a smart home project alongside 
+		two other team members. Our team was part of the department known as the IoT & Wearables group. The focus of this 
+		project was to apply the skills and knowledge we gained during our time at Intel. The aim of this project was to create 
+		a basic home automation system and to demonstrate how IoT can be incorporated into any home</p>
+	
+		<h5><strong>Technology & Tools Used</strong></h5>
+		<p>C/C++, HTML, CSS, JavaScript, Evothings, Circuitry, Arduino 101 board, and motion sensors</p>
+		</div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div id="section8" class="container pt-3">
+  <h1>Contact</h1>
+ <div class="row">
+            <div class="col-md-6">
+                <div class="well well-sm">
+                    <form class="form-horizontal" method="post">
+                        <fieldset>
+                            <legend class="text-center header"></legend>
+                            <div class="form-group">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Ask a question..." rows="7"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <div class="panel panel-default">
+                        <div class="text-center header">Address</div>
+                        <div class="panel-body text-center">
+                            <div>
+							<p>Herberton road</p>
+							<p>Crumlin, Dublin 12</p>
+							<p>0838573685</p>
+							<p>jasminelynam97@gmail.com</p>
+                            </div>
+                            <hr />
+                            <div id="map1" class="map">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</div>
+</body>
+</html>
